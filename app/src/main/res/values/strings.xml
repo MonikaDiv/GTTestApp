@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GTTest</string>
+    <string name="Contacts">Contact</string>
+    <string name="lbl_send_to">Send To: </string>
+    <string name="contact">Contact</string>
+    <string name="lbl_phone">Phone: </string>
+    <string name="lbl_amt">Amount</string>
+    <string name="lbl_hkd">HKD</string>
+    <string name="submit">Submit</string>
+    <string name="contact_permission_rationale">Need contacts read permission for fetching and displaying contacts</string>
+    <string name="error_message_for_contact_selection">Please select valid contact.</string>
+    <string name="success_msg">Send USD {%1$s} to {%1$s in\n" +
+             "%1$s} with phone number: {%1$s}</string>
+</resources>

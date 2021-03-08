@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_fetch_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/Contacts"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/lbl_send_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_fetch_contact"
+        android:layout_alignStart="@+id/btn_fetch_contact"
+        android:layout_alignLeft="@+id/btn_fetch_contact"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/lbl_send_to"
+        android:textColor="#4d4c65"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/lbl_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_send_to"
+        android:layout_alignStart="@+id/btn_fetch_contact"
+        android:layout_alignLeft="@+id/btn_fetch_contact"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/lbl_phone"
+        android:textColor="#4d4c65"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/lbl_contact"
+        android:layout_alignStart="@+id/lbl_contact"
+        android:layout_alignLeft="@+id/lbl_contact"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:hint="@string/lbl_amt"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        app:boxStrokeColor="@color/color_boxStroke"
+        app:hintTextAppearance="@style/text_in_layout_hint_Style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:inputType="numberDecimal"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="8sp"
+            android:longClickable="false"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/slight_gray"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lbl_hkd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_contact"
+        android:layout_alignRight="@+id/amount"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/lbl_hkd"
+        android:textColor="#4d4c65"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/lbl_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount"
+        android:layout_alignStart="@+id/btn_fetch_contact"
+        android:layout_alignLeft="@+id/btn_fetch_contact"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="6sp"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_error"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>
